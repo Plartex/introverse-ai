@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 interface AuthButtonProps {
   provider: string;
-  label: string;
+  label?: string;
   icon: React.ReactNode;
   className?: string;
   onClick?: () => void;
@@ -22,13 +22,14 @@ export const AuthButton = ({
     <Button
       variant="outline"
       className={cn(
-        "flex items-center justify-center gap-2 h-12 w-full max-w-sm transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] border-[1.5px]",
+        "flex items-center justify-center gap-2 w-12 h-12 rounded-full transition-all duration-300 hover:scale-[1.05] active:scale-[0.98] border-[1.5px]",
         className
       )}
       onClick={onClick}
+      aria-label={`Sign in with ${provider}`}
     >
       {icon}
-      <span className="font-medium">{label}</span>
+      {label && <span className="font-medium">{label}</span>}
     </Button>
   );
 };
@@ -43,10 +44,9 @@ export const AuthButtons = () => {
   };
 
   return (
-    <div className="flex flex-col gap-3 w-full max-w-sm animate-fade-in" style={{ animationDelay: "0.4s" }}>
+    <div className="flex items-center gap-3 animate-fade-in" style={{ animationDelay: "0.4s" }}>
       <AuthButton
         provider="google"
-        label="Sign in with Google"
         icon={
           <svg className="w-5 h-5" viewBox="0 0 24 24">
             <path
@@ -72,7 +72,6 @@ export const AuthButtons = () => {
       />
       <AuthButton
         provider="yandex"
-        label="Sign in with Yandex"
         icon={
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
             <path

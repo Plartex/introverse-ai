@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { AuthButtons } from "@/components/AuthButtons";
@@ -28,10 +27,9 @@ const Index = () => {
               find inspiration — all in one place.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center md:justify-start animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <div className="flex flex-wrap items-center gap-4 pt-6 justify-center md:justify-start animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <GradientButton 
                 icon={<ArrowRight size={18} />}
-                className="w-full sm:w-auto"
               >
                 Try for free
               </GradientButton>
