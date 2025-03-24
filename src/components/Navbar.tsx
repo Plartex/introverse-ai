@@ -22,7 +22,7 @@ const Navbar = ({ className }: NavbarProps) => {
             <span className="text-white font-semibold text-xl">A</span>
           </div>
           <span className="font-semibold text-xl hidden sm:block">
-            AI<span className="text-purple-600">Platform</span>
+            AI<span className="text-purple-600">Assistant</span>
           </span>
         </Link>
       </div>
@@ -33,19 +33,19 @@ const Navbar = ({ className }: NavbarProps) => {
             to="/features"
             className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
           >
-            Features
+            Возможности
           </Link>
           <Link
             to="/pricing"
             className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
           >
-            Pricing
+            Цены
           </Link>
           <Link
-            to="/docs"
+            to="/help"
             className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
           >
-            Docs
+            Помощь
           </Link>
         </div>
       </div>
@@ -55,12 +55,12 @@ const Navbar = ({ className }: NavbarProps) => {
           variant="ghost"
           className="text-gray-700 hover:text-purple-600 hover:bg-purple-50 hidden sm:flex"
         >
-          Sign In
+          Войти
         </Button>
         <Button
           className="bg-purple-600 text-white hover:bg-purple-700 transition-colors duration-200 shadow-sm"
         >
-          Get Started
+          Начать
         </Button>
       </div>
     </nav>
