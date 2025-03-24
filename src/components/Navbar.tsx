@@ -33,19 +33,19 @@ const Navbar = ({ className }: NavbarProps) => {
             to="/features"
             className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
           >
-            Возможности
+            Features
           </Link>
           <Link
             to="/pricing"
             className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
           >
-            Цены
+            Pricing
           </Link>
           <Link
             to="/help"
             className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
           >
-            Помощь
+            Help
           </Link>
         </div>
       </div>
@@ -55,12 +55,12 @@ const Navbar = ({ className }: NavbarProps) => {
           variant="ghost"
           className="text-gray-700 hover:text-purple-600 hover:bg-purple-50 hidden sm:flex"
         >
-          Войти
+          Sign In
         </Button>
         <Button
           className="bg-purple-600 text-white hover:bg-purple-700 transition-colors duration-200 shadow-sm"
         >
-          Начать
+          Get Started
         </Button>
       </div>
     </nav>

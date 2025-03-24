@@ -14,18 +14,18 @@ const Index = () => {
         <div className="flex-1 max-w-2xl">
           <div className="space-y-6 text-center md:text-left">
             <div className="inline-block px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 font-medium text-sm mb-4 animate-fade-in">
-              Ваш личный AI-помощник
+              Your Personal AI Assistant
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Общайтесь с{" "}
-              <span className="gradient-text">искусственным интеллектом</span> как с другом
+              Chat with{" "}
+              <span className="gradient-text">artificial intelligence</span> like a friend
             </h1>
             
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed mt-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Поможет с учебой, работой, творчеством и повседневными задачами. 
-              Задавайте вопросы, генерируйте тексты, получайте рекомендации и 
-              находите вдохновение — всё в одном месте.
+              Helps with studies, work, creativity, and everyday tasks.
+              Ask questions, generate texts, get recommendations, and
+              find inspiration — all in one place.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center md:justify-start animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -33,21 +33,21 @@ const Index = () => {
                 icon={<ArrowRight size={18} />}
                 className="w-full sm:w-auto"
               >
-                Попробовать бесплатно
+                Try for free
               </GradientButton>
               
               <AuthButtons />
             </div>
             
             <div className="pt-8 text-sm text-gray-500 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-              Нам уже доверяют{" "}
+              Already trusted by{" "}
               <span className="font-medium text-gray-700">
-                более 100 000 пользователей
+                over 100,000 users
               </span>
             </div>
             
             <div className="flex flex-wrap gap-8 justify-center md:justify-start pt-4 opacity-70 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              {["Студенты", "Писатели", "Разработчики", "Дизайнеры", "Учителя"].map((user, i) => (
+              {["Students", "Writers", "Developers", "Designers", "Teachers"].map((user, i) => (
                 <div 
                   key={i} 
                   className="text-gray-400 font-medium text-lg"
@@ -75,10 +75,10 @@ const Index = () => {
                   <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100 mb-4">
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
-                        <span className="text-purple-600 text-xs font-bold">Я</span>
+                        <span className="text-purple-600 text-xs font-bold">Me</span>
                       </div>
                       <div>
-                        <p className="text-gray-700">Как мне написать эссе по истории России?</p>
+                        <p className="text-gray-700">How do I write an essay on Russian history?</p>
                       </div>
                     </div>
                   </div>
@@ -90,20 +90,20 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="text-gray-700">
-                          Для написания эссе по истории России я рекомендую:
+                          For writing an essay on Russian history, I recommend:
                         </p>
                         <ul className="mt-2 space-y-1">
                           <li className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                            <span className="text-gray-700 text-sm">Выбрать конкретный период</span>
+                            <span className="text-gray-700 text-sm">Choose a specific period</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                            <span className="text-gray-700 text-sm">Исследовать ключевые события</span>
+                            <span className="text-gray-700 text-sm">Research key events</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                            <span className="text-gray-700 text-sm">Анализировать исторические источники</span>
+                            <span className="text-gray-700 text-sm">Analyze historical sources</span>
                           </li>
                         </ul>
                       </div>

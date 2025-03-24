@@ -46,7 +46,7 @@ export const AuthButtons = () => {
     <div className="flex flex-col gap-3 w-full max-w-sm animate-fade-in" style={{ animationDelay: "0.4s" }}>
       <AuthButton
         provider="google"
-        label="Войти через Google"
+        label="Sign in with Google"
         icon={
           <svg className="w-5 h-5" viewBox="0 0 24 24">
             <path
@@ -72,7 +72,7 @@ export const AuthButtons = () => {
       />
       <AuthButton
         provider="yandex"
-        label="Войти через Яндекс"
+        label="Sign in with Yandex"
         icon={
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
             <path
