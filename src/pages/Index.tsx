@@ -1,8 +1,9 @@
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { AuthButtons } from "@/components/AuthButtons";
 import GradientButton from "@/components/GradientButton";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 
 const Index = () => {
   return (
@@ -44,13 +45,25 @@ const Index = () => {
               </span>
             </div>
             
-            <div className="flex flex-wrap gap-8 justify-center md:justify-start pt-4 opacity-70 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              {["Students", "Writers", "Developers", "Designers", "Teachers"].map((user, i) => (
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+              {[
+                { feature: "Smart Responses", description: "Get intelligent answers to any question" },
+                { feature: "Content Generation", description: "Create essays, stories, and more" },
+                { feature: "Research Assistant", description: "Analyze and summarize information" }
+              ].map((item, i) => (
                 <div 
                   key={i} 
-                  className="text-gray-400 font-medium text-lg"
+                  className="p-4 rounded-xl border border-purple-100 bg-white shadow-sm hover:shadow-md transition-all duration-300"
                 >
-                  {user}
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 bg-purple-100 p-1 rounded-full">
+                      <Check size={14} className="text-purple-600" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold text-gray-800">{item.feature}</h3>
+                      <p className="text-xs text-gray-500 mt-1">{item.description}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
