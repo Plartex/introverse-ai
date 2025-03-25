@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import { AuthButtons } from "@/components/AuthButtons";
 import GradientButton from "@/components/GradientButton";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, Sparkles } from "lucide-react";
 
 const Index = () => {
   return (
@@ -133,6 +133,29 @@ const Index = () => {
           </div>
         </div>
       </main>
+      
+      {/* New Promotional Section */}
+      <section className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 py-10 text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-16">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-3">
+              <Sparkles className="h-6 w-6 text-yellow-300" />
+              <h3 className="text-xl md:text-2xl font-bold">Ready to experience the future of AI?</h3>
+            </div>
+            
+            <div className="flex gap-4">
+              <GradientButton 
+                className="bg-white hover:bg-gray-100 text-purple-700 hover:text-purple-800 border border-white"
+              >
+                Start for free
+              </GradientButton>
+              <button className="text-white border border-white/60 hover:bg-white/10 px-6 py-2 rounded-full transition-all">
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
