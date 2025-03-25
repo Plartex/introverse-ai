@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { AuthButtons } from "@/components/AuthButtons";
@@ -137,96 +136,30 @@ const Index = () => {
       {/* Content-rich Promotional Section */}
       <section className="w-full bg-gradient-to-br from-purple-700 via-purple-600 to-indigo-700 py-16 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Enhance Your Productivity with AI</h2>
-            <p className="text-lg text-purple-100 max-w-2xl mx-auto">
-              Our AI assistant integrates seamlessly into your workflow, helping you accomplish more in less time
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {[
-              {
-                icon: <Brain className="h-8 w-8" />,
-                title: "Smart Learning",
-                description: "Adapts to your needs and learns from interactions to provide more personalized assistance"
-              },
-              {
-                icon: <Lightbulb className="h-8 w-8" />,
-                title: "Creative Inspiration",
-                description: "Generate fresh ideas, overcome creative blocks, and explore new perspectives"
-              },
-              {
-                icon: <Users className="h-8 w-8" />,
-                title: "Team Collaboration",
-                description: "Share AI-generated content with teammates and collaborate on projects more efficiently"
-              },
-              {
-                icon: <BookOpen className="h-8 w-8" />,
-                title: "Knowledge Access",
-                description: "Tap into vast knowledge sources to find answers and insights instantly"
-              }
-            ].map((item, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="bg-purple-500/30 p-3 rounded-lg inline-block mb-4">
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-purple-100">{item.description}</p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-              <div className="md:max-w-xl">
-                <div className="flex items-center gap-3 mb-4">
-                  <Sparkles className="h-6 w-6 text-yellow-300" />
-                  <h3 className="text-2xl font-bold">What our users are saying</h3>
-                </div>
-                
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 flex items-center justify-center flex-shrink-0 font-bold">
-                    SK
-                  </div>
-                  <div>
-                    <p className="italic text-purple-100">"This AI assistant has transformed how I write and research. I can't imagine going back to working without it!"</p>
-                    <p className="text-sm mt-2 text-purple-200">Sarah K. — Content Creator</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center flex-shrink-0 font-bold">
-                    MT
-                  </div>
-                  <div>
-                    <p className="italic text-purple-100">"As a student, this tool helps me organize my thoughts and break down complex topics into manageable pieces."</p>
-                    <p className="text-sm mt-2 text-purple-200">Michael T. — Graduate Student</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex flex-col gap-4 w-full md:w-auto">
-                <div className="flex items-center gap-3 bg-purple-900/50 p-4 rounded-lg">
-                  <MessageSquare className="h-8 w-8 text-purple-300" />
-                  <div>
-                    <div className="text-2xl font-bold">100,000+</div>
-                    <div className="text-purple-200 text-sm">Happy Users</div>
-                  </div>
-                </div>
-                
-                <GradientButton 
-                  icon={<ArrowRight size={18} />}
-                  className="w-full md:w-auto py-3 px-8 text-lg"
-                >
-                  Join them today
-                </GradientButton>
-                
-                <button className="text-white border border-white/60 hover:bg-white/10 px-6 py-3 rounded-full transition-all w-full md:w-auto">
-                  See all features
-                </button>
-              </div>
+          <div className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm p-3 rounded-full inline-block mb-6">
+              <Sparkles className="h-8 w-8 text-yellow-300" />
             </div>
+            
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              Start Using AI Assistant <span className="text-yellow-300">Completely Free</span>
+            </h2>
+            
+            <p className="text-lg md:text-xl text-purple-100 mb-8">
+              No credit card required. Access powerful AI features without any commitment.
+              Upgrade anytime to unlock premium capabilities.
+            </p>
+            
+            <GradientButton 
+              icon={<ArrowRight size={18} />}
+              className="py-3 px-8 text-lg"
+            >
+              Try for free now
+            </GradientButton>
+            
+            <p className="mt-4 text-purple-200 text-sm">
+              Free plan includes 50 messages per day
+            </p>
           </div>
         </div>
       </section>
